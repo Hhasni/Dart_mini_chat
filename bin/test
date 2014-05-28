@@ -1,0 +1,53 @@
+library server;
+
+import 'dart:io';
+import 'dart:async';
+
+StreamController _controller;
+
+int future(String s) {
+  return 10;
+}
+void  main() {
+  List<String> list = [];
+
+  list.add('coucou');
+  print("list[0] = ${list[0]}.");
+
+  //future('lol').then((int chff) => print(chff));
+  print(future('lol'));
+
+  Map map = {'test': 'toi'};
+
+  map['5'] = 'lol';
+
+  print(map['5']);
+  print(map['test']);
+
+  'tretre'.replaceAll('tretre', 'lololo');
+  print(map.containsKey('test'));
+  map.forEach((k, v) {
+    print(k);
+  });
+
+  map.forEach(affi);
+  map.forEach((k, v) => print(k));
+  teststream().listen((int test) => print(test));
+  _controller.add(15);
+  _controller.add(20);
+}
+
+void affi(k, v) {
+  print(k);
+}
+
+void affi2(k, v) => print(k);
+
+Stream<int> teststream() {
+  void listen() {
+    print('j\'ecoute');
+  }
+
+  _controller = new StreamController(onListen: listen);
+  return _controller.stream;
+}

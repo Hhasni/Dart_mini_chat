@@ -1,0 +1,74 @@
+html {
+   height: 100%;
+   background-attachment: fixed;
+   background-image: -webkit-gradient(
+           linear,
+           left top,
+           right bottom,
+           color-stop(0, #8b94a2),
+           color-stop(1, #28465c));
+}
+
+#input {
+    margin-top: -5%;
+    width: 89%;
+    height: 25px;
+    font-size: 18px;
+    border-style: solid;
+    border-style: black;
+    border-width: 1px;
+}
+
+#output {
+    width: 100%;
+    height: 500px;
+    font-size: 16px;
+    overflow-y: scroll;
+    font-style: oblique;
+    color:  0x333333;
+}
+
+#main {
+    width: 100%;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: rgba(76, 76, 98, 0.88);
+    min-width: 300px;
+    min-height: 350px;
+    text-align: left;
+    max-width: 900px;
+}
+
+#box{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #316daa;
+}
+
+#titlebox{
+    padding-top: 50px;
+    margin-bottom: 10%;
+}
+#content{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+#button{
+    position: relative;
+    left: 0%;
+   width: 9.5%;
+   font-size: 20px;
+   color: black;
+   border-style: none;
+   background-color: #888888;
+   border-radius: 10px;
+}
